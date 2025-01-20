@@ -1,0 +1,87 @@
+/* Universal Selector */
+*{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+.body, .nav-container{
+    margin: 30px auto;
+    max-width: 1440px;
+}
+
+/* Nav Items */
+.menu{
+    display: none;
+}
+.nav>ul>li>a{
+    right: 20px;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    margin-right: 20px;
+}
+.list-item1{
+    color: orange;
+}
+.list-item2{
+    color: skyblue;
+}
+.list-item3{
+    color: rgba(5, 212, 223, 1);
+}
+.list-item4{
+    color: rgba(93, 88, 239, 1);
+}
+.nav-head{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+}
+.nav-button{
+    border: none;
+    border-radius: 12px;
+    padding: 10px 60px;
+    background-color: orange;
+    color: white;
+    font-size: 500;
+    font-size: 1.5rem;
+}
+.nav{
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Main body parts */
+
+
+@media screen and (max-width:576px){
+    .nav-head, .list-items, .nav-button{
+        display: none;
+    }
+    .nav-container{
+        border-bottom: 0.5px solid orange;
+    }
+    .body{
+        margin: 10px 20px;
+    }
+    .nav{
+
+        justify-content: space-between;
+        margin: 10px 20px;
+    }
+    .menu{
+        display: contents;
+        padding-right: 200px;
+    }
+    
+}
