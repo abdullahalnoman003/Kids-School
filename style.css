@@ -1,53 +1,63 @@
 /* Universal Selector */
-*{
+* {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.flex{
+.flex {
     display: flex;
 }
-.body, .nav-container{
+
+.body,
+.nav-container {
     margin: 30px auto;
     max-width: 1440px;
 }
 
 /* Nav Items */
-.menu{
+.menu {
     display: none;
 }
-.nav>ul>li>a{
+
+.nav>ul>li>a {
     right: 20px;
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
     margin-right: 20px;
 }
-.list-item1{
+
+.list-item1 {
     color: orange;
 }
-.list-item2{
+
+.list-item2 {
     color: skyblue;
 }
-.list-item3{
+
+.list-item3 {
     color: rgba(5, 212, 223, 1);
 }
-.list-item4{
+
+.list-item4 {
     color: rgba(93, 88, 239, 1);
 }
-.nav-head{
+
+.nav-head {
     font-size: 2rem;
     font-weight: bold;
     color: black;
     align-items: center;
 }
-.nav-button{
+
+.nav-button {
     border: none;
     border-radius: 12px;
     padding: 10px 60px;
@@ -56,32 +66,93 @@ li{
     font-size: 500;
     font-size: 1.5rem;
 }
-.nav{
-    justify-content: space-around;
+
+.nav {
+    justify-content: space-between;
     align-items: center;
 }
 
 /* Main body parts */
+/* First Section */
+.first{
+    align-items: center;
+    gap: 50px;
+}
+.first-content{
+    padding: 20px;
+}
+.first-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+#power{
+    color: orange;
+    font-weight: bolder;
+}
+#vision{
+    color: skyblue;
+    font-weight: bolder;
+}
+.first-subtitle{
+    font-size: 20px;
+    color: black;
+}
+.first-button{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 45px;
+    border-radius: 12px;
+    border: none;
+}
+/* Second Section */
+.second{
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
+@media screen and (max-width:576px) {
 
-@media screen and (max-width:576px){
-    .nav-head, .list-items, .nav-button{
+    .nav-head,
+    .list-items,
+    .nav-button {
         display: none;
     }
-    .nav-container{
+
+    .nav-container {
         border-bottom: 0.5px solid orange;
     }
-    .body{
+
+    .body {
         margin: 10px 20px;
     }
-    .nav{
+
+    .nav {
 
         justify-content: space-between;
         margin: 10px 20px;
     }
-    .menu{
+
+    .menu {
         display: contents;
         padding-right: 200px;
     }
-    
+    .first{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .first-title{
+        font-size: 2rem;
+    }
+    .first-subtitle{
+        font-size: 14px;
+    }
+    .first-button{
+        font-size: 1rem;
+    }
 }
