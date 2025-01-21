@@ -205,10 +205,83 @@ marquee{
     color: white;
 }
 /* Third Section */
+.third-section{
+    justify-content: space-between;
+    gap: 150px;
+}
+.third{
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to bottom, white, rgba(255, 244, 220, 1));
+}
+.third-container1{
+    width: fit-content;
+    border: none;
+    border-radius: 16;
+    background-color: white;
+    padding: 0px;
+}
+.third-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.view-button{
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.view-btn{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+}
 
 
 footer{
     background-color: rgba(1, 172, 253, 1);
+}
+.footer-content{
+    padding: 50px 0px;
+    max-width: 1440px;
+    margin: 30px auto 0px auto;
+    justify-content: space-between;
+    
+}
+.footer-left{
+    max-width: 600px;
+}
+.footer-left-logo{
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    height: fit-content;
+    gap: 10px;
+}
+.footer-left-content{
+    font-size: 1.25rem;
+    color: white;
+}
+.mid>ul>li{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2;
+}
+.about-school{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.footer-right ul{
+    gap: 5px;
 }
 
 @media screen and (max-width:576px) {
@@ -289,4 +362,16 @@ footer{
     .lr-button{
         display: none;
     }
+    .third-container1{
+        display: none;
+    }
+    .third-container2{
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        
+    }  
+    .view-btn{
+        font-size: 16px;
+        padding: 10px 35px;
+    }  
 }
